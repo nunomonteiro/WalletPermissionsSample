@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">WalletPermissionsSample</string>
+    <string name="install">INSTALL</string>
+    <string name="skip">SKIP</string>
+    <string name="install_wallet_from_iab">To pay for in-app items, you need to install the AppCoins Wallet.</string>
+    <string name="wallet_missing">AppCoins Wallet Missing</string>
+</resources>
