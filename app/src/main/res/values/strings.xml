@@ -4,4 +4,6 @@
     <string name="skip">SKIP</string>
     <string name="install_wallet_from_iab">To pay for in-app items, you need to install the AppCoins Wallet.</string>
     <string name="wallet_missing">AppCoins Wallet Missing</string>
+    <string name="trigger_permissions">Trigger Permissions</string>
+    <string name="the_wallet_address_is">The wallet address is:</string>
 </resources>

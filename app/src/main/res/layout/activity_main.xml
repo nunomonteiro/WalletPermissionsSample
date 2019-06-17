@@ -13,9 +13,42 @@
         android:layout_marginStart="117dp"
         android:layout_marginTop="409dp"
         android:layout_marginEnd="118dp"
-        android:text="Trigger Permissions"
+        android:text="@string/trigger_permissions"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:background="@null"
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="99dp"
+        android:layout_marginTop="114dp"
+        android:layout_marginEnd="99dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/the_wallet_address_is"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/walletAddressText"
+        android:layout_width="346dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:autofillHints=""
+        android:background="@null"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:lines="8"
+        android:minLines="6"
+        android:singleLine="false"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@+id/titleText"
+        tools:layout_editor_absoluteX="33dp" />
 
 </android.support.constraint.ConstraintLayout>
