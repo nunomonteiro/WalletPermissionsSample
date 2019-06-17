@@ -13,6 +13,7 @@ import android.support.v7.widget.AppCompatEditText;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 
 import org.w3c.dom.Text;
 
@@ -21,7 +22,7 @@ import java.util.Set;
 public class MainActivity extends AppCompatActivity {
 
     private Button btnPermissions;
-    private AppCompatEditText walletAddressText;
+    private EditText walletAddressText;
 
     static final int WALLET_ADDRESS_REQUEST = 123;  // The request code
     static final String WALLET_ADDRESS_KEY = "WALLET_ADDRESS";
@@ -31,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        walletAddressText = (AppCompatEditText) findViewById(R.id.walletAddressText);
+        walletAddressText = (EditText) findViewById(R.id.walletAddressText);
 
         btnPermissions = (Button)findViewById(R.id.btnPermissions);
         btnPermissions.setOnClickListener(new View.OnClickListener() {
@@ -64,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    private static void showWalletInstallDialog(Context context, String message) {
+    private void showWalletInstallDialog(Context context, String message) {
         AlertDialog.Builder builder;
         builder = new AlertDialog.Builder(context);
         builder.setTitle(R.string.wallet_missing)
@@ -75,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
                 .show();
     }
 
-    private static void gotoStore(Context activity) {
+    private void gotoStore(Context activity) {
         String appPackageName = "com.appcoins.wallet";
 
         //First try getting the AppCoins wallet from Aptoide

@@ -63,3 +63,82 @@ fastlane/Preview.html
 fastlane/screenshots
 fastlane/test_output
 fastlane/readme.md
+
+# Android
+local.properties
+
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+#*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+.idea
+
+# Solidity contracts
+deploy/build/
+deploy/node_modules/
+deploy/package-lock.json
+
+# Migrated
+# local credentials
+credentials.properties
+
+# Vim
+*.sw[op]
+
+# Gradle
+.gradle
+build
+release
+
+# IDEA
+.idea
+!.idea/codeStyleSettings.xml
+*.iml
+*.iws
+
+# Eclipse
+.project
+.classpath
+.settings/
+bin
+
+# Maven
+*.log
+log/
+target/
+
+# Output
+database*
+out
+logs
+test_db*
+testnetSampleDb
+sampleDB*
+
+# Mac
+.DS_Store
+
+
+# Local configuration
+**/user.conf
+**/test-user.conf
+**/out.log
+**/user.log4j.properties

@@ -39,16 +39,21 @@
         android:id="@+id/walletAddressText"
         android:layout_width="346dp"
         android:layout_height="0dp"
+        android:layout_marginStart="33dp"
         android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
         android:autofillHints=""
         android:background="@null"
         android:ems="10"
+        android:gravity="center"
         android:inputType="textMultiLine"
-        android:lines="8"
-        android:minLines="6"
+        android:lines="1"
+        android:minLines="1"
         android:singleLine="false"
         android:textAlignment="center"
-        app:layout_constraintTop_toBottomOf="@+id/titleText"
-        tools:layout_editor_absoluteX="33dp" />
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleText" />
 
 </android.support.constraint.ConstraintLayout>
